@@ -27,3 +27,6 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
+- script: |
+    dir $(Build.ArtifactStagingDirectory)
+  displayName: 'List Directory Contents'
