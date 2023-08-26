@@ -14,6 +14,12 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+    installationVersion: '3.x' # Specify the desired .NET version
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
