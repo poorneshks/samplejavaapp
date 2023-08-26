@@ -6,8 +6,8 @@
 trigger:
 - master
 
-pool:
-  name: new agent  # Use "name" to specify the pool name
+pool: mycomputeragent
+  
 
 steps:
 - script: echo Hello, world!
