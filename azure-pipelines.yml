@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: poorneshagent  # Use "name" to specify the pool name
+  name: new agent  # Use "name" to specify the pool name
 
 steps:
 - script: echo Hello, world!
